@@ -19,7 +19,7 @@
                 <h1>Verificador de CPF</h1>
                 <form id="form-cpf" action="">
                     <label for="cpf">Digite o CPF a ser verificado: </label>
-                    <input id="cpf" name="cpf" type="text" minlength="11" maxlength="11" required>
+                    <input id="cpf" name="cpf" type="text" minlength="11" maxlength="11" pattern="\d*" placeholder="Apenas números" required>
                     <br>
                     <div class="alinha-btn">
                         <input type="submit" value="Verificar">
