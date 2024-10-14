@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de CPF</title>
+    <script defer src="verifica-cpf.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/casa1.png" class="icone"> Início</a>
+        <a href="verifica-cpf.php"><img src="img/php-logo1.png" class="icone"> Verificador de CPF em PHP</a>
+        <a href="verifica-cpf.html" class="ativo"><img src="img/js-logo1.png" class="icone ativo"> Verificador de CPF em JavaScript</a>
+        <a href="comofunciona.html"><img src="img/faq.png" class="icone"> Como é feita a Verificação?</a>
+    </nav>
+
+    <div class="site">
+        <div class="conteudo">
+            <h1>Verificador de CPF</h1>
+            <form id="form-cpf" onsubmit="VerificaCpf(event)">
+                <label for="cpf">Digite o CPF a ser verificado: </label>
+                <input id="cpf" name="cpf" type="text" minlength="11" maxlength="11" required>
+                <br>
+                <div class="alinha-btn">
+                    <input type="submit" value="Verificar">
+                </div>
+            </form>
+            <p id="veredicto"></p>
+            <p id="obs"></p>
+        </div>
+    </div>
+    <footer>
+        <p>É importante atentar-se que este site verifica se o CPF é válido a partir da lógica de <strong>verificação matemática</strong></p>
+        <p>CPFs com números repetidos ou sequências óbvias, mesmo que validados pela verificação matemática, não são considerados válidos pela Receita Federal e não são atribuídos a pessoas reais, justamente para evitar fraudes.</p>
+    </footer>
+</body>
+</html>
