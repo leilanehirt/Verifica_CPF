@@ -7,6 +7,16 @@
     font-family: "Times New Roman", serif;
 
 }
+
+footer{
+    padding: 8px 12px;
+    background-color: #3a3939de;
+    color: #faebd7;
+}
+h2{
+   font-size: 1.5rem;
+}
+
 body{
     background-color: rgb(249, 243, 236);
 
@@ -14,11 +24,9 @@ body{
     overflow: -moz-scrollbars-none; /* Para Firefox */
     -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
 }
-
 body::-webkit-scrollbar {
     display: none; /* Para Chrome, Safari e Opera */
 }
-
 
 nav{
     padding: 24px;
@@ -28,6 +36,12 @@ nav{
     width: 100dvw;
     z-index: 2;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    /*flex-wrap: wrap;*/
     text-align: center;
 }
 nav a{
@@ -39,6 +53,21 @@ nav .icone{
 .icone{
     vertical-align: text-bottom;
 }
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1rem;;
+    }
+    nav .icone{
+        height: 16px;
+    }
+    nav{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
 
 a{
     text-decoration: none;
@@ -146,4 +175,4 @@ a.item:hover{
     background: #0b2261de;
     color: #faebd7de; 
 } 
-::-moz-selection { background: #1f6a8f; color: #fff; } 
+::-moz-selection { background: #1f6a8f; color: #fff; }
